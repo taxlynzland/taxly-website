@@ -3,47 +3,333 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Chinese Accountant NZ | 中文会计税务服务 | Taxly Accounting</title>
-<meta name="description" content="English and Chinese accounting and New Zealand tax services for individuals, sole traders and small businesses in Auckland and across New Zealand.">
+
+<title>Taxly Accounting | NZ Tax & Accounting Services</title>
+
+<meta name="description" content="Taxly Accounting provides New Zealand tax and accounting services for individuals, sole traders and small businesses. GST, company accounting, Xero and IRD assistance. English and Chinese service available.">
+
 <meta name="robots" content="index,follow,max-image-preview:large">
-<link rel="canonical" href="https://taxly.nz/chinese-accountant/">
-<meta property="og:title" content="Chinese Accountant NZ | 中文会计税务服务 | Taxly Accounting">
-<meta property="og:description" content="English and Chinese accounting and New Zealand tax services for individuals, sole traders and small businesses in Auckland and across New Zealand.">
-<meta property="og:url" content="https://taxly.nz/chinese-accountant/">
+
+<link rel="canonical" href="https://taxly.nz/">
+
+<meta property="og:title" content="Taxly Accounting | NZ Tax & Accounting Services">
+<meta property="og:description" content="Practical New Zealand tax and accounting services for individuals, sole traders and small businesses.">
+<meta property="og:url" content="https://taxly.nz/">
 <meta property="og:type" content="website">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "Taxly Accounting", "url": "https://taxly.nz/", "email": "taxly.nzland@gmail.com", "telephone": "+64 21 088 08865", "areaServed": [{"@type": "City", "name": "Auckland"}, {"@type": "Country", "name": "New Zealand"}], "availableLanguage": ["English", "Chinese"]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does Taxly Accounting provide service in Chinese?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Taxly Accounting provides accounting and New Zealand tax services in both English and Chinese."}}, {"@type": "Question", "name": "Do I need to be based in Auckland?", "acceptedAnswer": {"@type": "Answer", "text": "No. Taxly Accounting is Auckland-based and can provide remote services to clients across New Zealand."}}, {"@type": "Question", "name": "What accounting and tax services are available?", "acceptedAnswer": {"@type": "Answer", "text": "Services include income tax returns, GST returns, sole trader and company accounting, rental property tax, overseas income and New Zealand tax, Xero accounting, tax advice and IRD assistance."}}]}</script>
+<meta property="og:image" content="https://taxly.nz/taxly-homepage.jpg">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"ProfessionalService",
+  "name":"Taxly Accounting",
+  "url":"https://taxly.nz/",
+  "email":"taxly.nzland@gmail.com",
+  "telephone":"+642108808865",
+  "areaServed":[
+    {"@type":"City","name":"Auckland"},
+    {"@type":"Country","name":"New Zealand"}
+  ],
+  "availableLanguage":["English","Chinese"],
+  "knowsAbout":[
+    "New Zealand tax",
+    "Accounting",
+    "GST returns",
+    "Sole trader accounting",
+    "Small business accounting",
+    "Company accounting",
+    "Xero accounting",
+    "IRD assistance"
+  ]
+}
+</script>
+
 <style>
-:root{--charcoal:#30302f;--cream:#eee5d5;--paper:#f8f6f1;--ink:#272725;--muted:#66625c}
-*{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--paper);color:var(--ink);line-height:1.65}
-header{background:var(--charcoal);color:white;padding:22px 7%} nav{max-width:1080px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:24px}
-.brand{font-family:Georgia,serif;font-size:28px;color:var(--cream);text-decoration:none}.navlinks a{color:white;text-decoration:none;margin-left:20px;font-size:14px}
-.hero{background:var(--charcoal);color:white;padding:70px 7% 78px}.wrap{max-width:980px;margin:auto}.eyebrow{color:var(--cream);letter-spacing:.08em;text-transform:uppercase;font-size:13px}
-h1{font-family:Georgia,serif;font-size:48px;line-height:1.12;margin:10px 0 18px;max-width:800px} .hero p{max-width:760px;font-size:19px;color:#eee}
-main{padding:55px 7%} h2{font-family:Georgia,serif;font-size:31px;margin-top:0} .card{background:white;padding:32px;border-radius:4px;margin:0 0 28px}
-ul{padding-left:22px}.cta{display:inline-block;background:var(--cream);color:var(--charcoal);padding:12px 18px;text-decoration:none;font-weight:bold;margin:8px 10px 0 0}
-.faq{border-top:1px solid #ddd;padding:18px 0}.faq h3{font-size:18px;margin:0 0 6px}.faq p{margin:0;color:var(--muted)}
-footer{background:var(--charcoal);color:#ddd;padding:30px 7%;font-size:14px} footer a{color:var(--cream)}
-@media(max-width:700px){h1{font-size:36px}.navlinks{display:none}.hero{padding-top:48px}.card{padding:24px}}
+*{
+  box-sizing:border-box;
+}
+
+html,body{
+  margin:0;
+  padding:0;
+  background:#30302f;
+  font-family:Arial,Helvetica,sans-serif;
+}
+
+/* ORIGINAL TAXLY VISUAL HOMEPAGE */
+
+.homepage{
+  position:relative;
+  width:100%;
+  max-width:1600px;
+  margin:0 auto;
+  line-height:0;
+}
+
+.homepage img{
+  display:block;
+  width:100%;
+  height:auto;
+}
+
+/*
+Clickable service areas.
+These sit invisibly over the service section
+of the existing Taxly homepage image.
+*/
+
+.service-link{
+  position:absolute;
+  display:block;
+  z-index:5;
+  cursor:pointer;
+}
+
+/* Service cards */
+
+.service-1{
+  left:7%;
+  top:43%;
+  width:20%;
+  height:10%;
+}
+
+.service-2{
+  left:28%;
+  top:43%;
+  width:20%;
+  height:10%;
+}
+
+.service-3{
+  left:49%;
+  top:43%;
+  width:20%;
+  height:10%;
+}
+
+.service-4{
+  left:70%;
+  top:43%;
+  width:22%;
+  height:10%;
+}
+
+/* MACHINE READABLE CONTENT */
+
+.seo-content{
+  background:#f8f6f1;
+  color:#272725;
+  padding:55px 7%;
+  line-height:1.65;
+}
+
+.seo-wrap{
+  max-width:1050px;
+  margin:auto;
+}
+
+.seo-content h1,
+.seo-content h2{
+  font-family:Georgia,serif;
+  color:#30302f;
+}
+
+.seo-content h1{
+  font-size:34px;
+  margin:0 0 15px;
+}
+
+.seo-content h2{
+  font-size:26px;
+  margin-top:35px;
+}
+
+.intro{
+  max-width:800px;
+  color:#555;
+}
+
+.services{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:16px;
+  margin-top:25px;
+}
+
+.service{
+  display:block;
+  background:white;
+  border:1px solid #e2ddd4;
+  padding:22px;
+  text-decoration:none;
+  color:#272725;
+}
+
+.service strong{
+  display:block;
+  font-size:18px;
+  margin-bottom:5px;
+}
+
+.service span{
+  color:#666;
+  font-size:14px;
+}
+
+.contact{
+  margin-top:40px;
+  padding-top:25px;
+  border-top:1px solid #ddd;
+}
+
+.contact a{
+  color:#30302f;
+}
+
+footer{
+  background:#30302f;
+  color:#ddd;
+  padding:25px 7%;
+  line-height:1.5;
+  text-align:center;
+  font-size:14px;
+}
+
+@media(max-width:700px){
+
+  .services{
+    grid-template-columns:1fr;
+  }
+
+  .seo-content{
+    padding:38px 6%;
+  }
+
+  .seo-content h1{
+    font-size:28px;
+  }
+
+}
 </style>
 </head>
+
 <body>
-<header><nav><a class="brand" href="/">Taxly Accounting</a><div class="navlinks"><a href="/">Home</a><a href="/nz-tax-accounting/">Services</a><a href="mailto:taxly.nzland@gmail.com">Contact</a></div></nav></header>
-<section class="hero"><div class="wrap"><div class="eyebrow">Taxly Accounting · New Zealand</div><h1>Chinese Accounting &amp; Tax Services in New Zealand</h1><p>Taxly Accounting provides accounting and New Zealand tax services in both English and Chinese, helping clients understand their accounting records, tax obligations and IRD matters clearly.</p><a class="cta" href="mailto:taxly.nzland@gmail.com?subject=Taxly%20Consultation">Contact Taxly</a></div></section>
-<main><div class="wrap">
-<section class="card"><h2>How Taxly can help</h2><ul><li>Individual income tax returns</li>
-<li>Sole trader accounting</li>
-<li>Company accounting and tax</li>
-<li>GST returns</li>
-<li>Rental property tax</li>
-<li>Overseas income and New Zealand tax</li>
-<li>Xero accounting</li>
-<li>Tax advice and IRD assistance</li></ul></section>
-<section class="card" lang="zh-Hans"><h2>新西兰中文会计与税务服务</h2><p>Taxly Accounting 提供英文及中文会计和新西兰税务服务，为个人、Sole Trader 个体经营者及中小企业提供清晰、实用的会计与税务支持。服务包括个人报税、公司税务、GST 申报、出租房税务、海外收入、新西兰税务、Xero 会计以及 IRD 协助。服务范围包括奥克兰及新西兰各地。</p></section>
-<section class="card"><h2>Frequently asked questions</h2><div class="faq"><h3>Does Taxly Accounting provide service in Chinese?</h3><p>Yes. Taxly Accounting provides accounting and New Zealand tax services in both English and Chinese.</p></div>
-<div class="faq"><h3>Do I need to be based in Auckland?</h3><p>No. Taxly Accounting is Auckland-based and can provide remote services to clients across New Zealand.</p></div>
-<div class="faq"><h3>What accounting and tax services are available?</h3><p>Services include income tax returns, GST returns, sole trader and company accounting, rental property tax, overseas income and New Zealand tax, Xero accounting, tax advice and IRD assistance.</p></div></section>
-<section class="card"><h2>Contact Taxly Accounting</h2><p>Auckland-based with remote service available across New Zealand. English &amp; 中文服务.</p><p><a href="mailto:taxly.nzland@gmail.com">taxly.nzland@gmail.com</a> · <a href="tel:+642108808865">021 088 08865</a></p></section>
-</div></main>
-<footer><div class="wrap">© Taxly Accounting · <a href="/">taxly.nz</a></div></footer>
-</body></html>
+
+<!-- ORIGINAL TAXLY HOMEPAGE IMAGE -->
+
+<div class="homepage">
+
+<img
+  src="/taxly-homepage.jpg"
+  alt="Taxly Accounting New Zealand tax and accounting services"
+>
+
+<!-- CLICKABLE SERVICE AREAS -->
+
+<a
+  class="service-link service-1"
+  href="/nz-tax-accounting/"
+  aria-label="New Zealand Tax and Accounting Services">
+</a>
+
+<a
+  class="service-link service-2"
+  href="/gst-returns/"
+  aria-label="GST Returns New Zealand">
+</a>
+
+<a
+  class="service-link service-3"
+  href="/small-business-accounting/"
+  aria-label="Small Business and Company Accounting">
+</a>
+
+<a
+  class="service-link service-4"
+  href="/sole-trader-accounting/"
+  aria-label="Sole Trader Accounting New Zealand">
+</a>
+
+</div>
+
+
+<!-- REAL HTML CONTENT FOR GOOGLE / CHATGPT / CLIENTS -->
+
+<section class="seo-content">
+
+<div class="seo-wrap">
+
+<h1>New Zealand Tax &amp; Accounting Services</h1>
+
+<p class="intro">
+Taxly Accounting provides practical accounting and New Zealand tax services for individuals, sole traders and small businesses. Auckland-based with remote services available across New Zealand. English and Chinese service available.
+</p>
+
+
+<div class="services">
+
+<a class="service" href="/nz-tax-accounting/">
+<strong>NZ Tax &amp; Accounting</strong>
+<span>Income tax, annual accounting and practical New Zealand tax support.</span>
+</a>
+
+<a class="service" href="/gst-returns/">
+<strong>GST Returns</strong>
+<span>GST return preparation, accounting review and GST support.</span>
+</a>
+
+<a class="service" href="/small-business-accounting/">
+<strong>Small Business &amp; Company Accounting</strong>
+<span>Financial statements, company tax, GST, Xero and IRD assistance.</span>
+</a>
+
+<a class="service" href="/sole-trader-accounting/">
+<strong>Sole Trader Accounting</strong>
+<span>Income tax, GST, business expenses, Xero and provisional tax support.</span>
+</a>
+
+</div>
+
+
+<section lang="zh-Hans">
+
+<h2>新西兰中文会计与税务服务</h2>
+
+<p>
+Taxly Accounting 提供英文及中文会计和新西兰税务服务，为个人、Sole Trader 个体经营者及中小企业提供会计与税务支持，包括所得税申报、GST 申报、公司会计、Xero 会计以及 IRD 税务协助。
+</p>
+
+</section>
+
+
+<div class="contact">
+
+<h2>Contact Taxly Accounting</h2>
+
+<p>
+Email:
+<a href="mailto:taxly.nzland@gmail.com">
+taxly.nzland@gmail.com
+</a>
+</p>
+
+<p>
+Phone:
+<a href="tel:+642108808865">
+021 088 08865
+</a>
+</p>
+
+</div>
+
+</div>
+</section>
+
+
+<footer>
+© Taxly Accounting · New Zealand
+</footer>
+
+</body>
+</html>
