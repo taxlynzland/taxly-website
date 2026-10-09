@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
     <loc>https://taxly.nz/</loc>
   </url>
+
   <url>
     <loc>https://taxly.nz/nz-tax-accounting/</loc>
   </url>
+
   <url>
     <loc>https://taxly.nz/gst-returns/</loc>
   </url>
+
   <url>
-    <loc>https://taxly.nz/overseas-income-tax/</loc>
+    <loc>https://taxly.nz/small-business-accounting/</loc>
   </url>
+
   <url>
-    <loc>https://taxly.nz/rental-property-tax/</loc>
+    <loc>https://taxly.nz/sole-trader-accounting/</loc>
   </url>
-  <url>
-    <loc>https://taxly.nz/chinese-accountant/</loc>
-  </url>
+
 </urlset>
